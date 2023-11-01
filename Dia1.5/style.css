@@ -1,0 +1,104 @@
+body{
+    margin: 0; /* Eliminar margen predeterminado */
+    padding: 0; /* Eliminar padding predeterminado */
+    background-image: url(Images/Fondo3.png);
+    background-position: center center; /* Centra la imagen en la página */
+    background-repeat: no-repeat; /* Asegura que la imagen no se repita */
+    background-attachment: fixed; /* La imagen no se desplaza con el contenido */
+    background-size: cover; /* Hace que la imagen cubra todo el viewport */
+    height: 100vh; /* Altura completa del viewport */
+}
+
+.content{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura de la ventana del navegador */
+    flex-direction: column;
+}
+
+.alinador{
+        background-color: rgba(236, 127, 172, 0.623);
+        border-bottom-left-radius: 10px; /* Esto redondea las esquinas */
+        border-bottom-right-radius: 10px; 
+        width: 574px;
+        padding-bottom: 9px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgba(16, 127, 231, 0.815);
+}
+
+pre {
+    font-family: 'Courier New', monospace; /* Esto asegura que el espaciado se mantiene uniforme */
+    white-space: pre; /* Esto asegura que los espacios se preservan en el texto ASCII */
+    line-height: 1; /* Ajustar según sea necesario para que el arte se vea bien */
+    padding-left: 21px;
+}
+
+#iconos{
+    width: 19%;
+    margin-right: 7px;
+}
+.barra{
+    display: flex;
+    background-color: rgba(214,64,127,255);
+    width: 578px;
+    border-top-left-radius: 10px; /* Esto redondea las esquinas */
+    border-top-right-radius: 10px; 
+    border-style: solid;
+    border-color: rgba(16, 127, 231, 0.815);
+    justify-content: space-between;
+}
+.alinador p{
+    padding-left: 25px;
+    color: #002442;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-family: cursive;
+}
+.alinador code{
+    padding-left: 25px;
+    font-size: 22px;
+}
+code.code.Java{
+    width: 35ch;
+    animation: typing 2s steps(32),
+    blink .5s step-end infinite alternate;
+    overflow: hidden;
+ }
+ code.code.C{
+    width: 23ch;
+    animation: typing 2s steps(22),
+    blink .5s step-end infinite alternate;
+    overflow: hidden;
+ }
+ code.code{
+    color: #02fdfd;
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+ }
+ code.code.Python{
+    width: 21ch;
+    animation: typing 2s steps(20),
+    blink .5s step-end infinite alternate;
+    overflow: hidden;
+ }
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+@keyframes blink{
+    50% { border-color: transparent;}
+}
+
+.mario{
+    width: 209px;
+}
+
+#url{
+    margin-left: 22px;
+    font-family: cursive;
+    font-size: 11px;
+}
