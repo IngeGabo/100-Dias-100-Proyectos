@@ -50,6 +50,9 @@ pre {
     border-color: rgb(93 42 13);
     justify-content: space-between;
     margin-top: 80px;
+    background-image: url(Images/ladrillo.png);
+    background-size: contain; /* Hace que la imagen cubra todo el viewport */
+    background-position-x: center;
 }
 .alinador p{
     padding-left: 25px;
@@ -107,6 +110,7 @@ code.code.Java{
     margin-left: 22px;
     font-family: 'Press Start 2P', cursive;
     font-size: 11px;
+    color: #ffc18a;
 }
 
 #Letras{
@@ -120,20 +124,25 @@ code.code.Java{
     padding: 5px 10px;
   }
   
-  .button {
-    padding: 0 10px;
+.button {
     cursor: pointer;
     user-select: none;
     color: #fff;
     transition: background-color 0.3s, color 0.3s;
+    margin-right: 5px;
     border-radius: 4px;
-  }
+    background-image: url(Images/cubos.png);
+    background-repeat: no-repeat; /* Asegura que la imagen no se repita */
+    background-size: contain; /* Hace que la imagen cubra todo el viewport */
+    background-position-x: center;
+    
+}
   
-  .button:hover {
+.button:hover {
     background-color: rgba(238, 124, 49, 0.904); /* Naranja */
     /* mover los el color del brillo */
-    box-shadow: 0 0 8px 0 #FF851C;
-  }
-  .iconos{
+    box-shadow: 0 0 8px 0 #fff01c;
+}
+.iconos{
     width: 22px;
-  }
+}
