@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Dia 1</title>
 </head>
 <body>
     <div class="content">
         <div class="barra">
             <p id = "url">C:/100Dias100Proyectos/Dia1</p>
-            <img src="Images/iconos.png" alt="iconos" id="iconos">
+            <div class="fake-title-bar">
+                <div class="button minimize" onclick="minimizeWindow()"><img src="Images/icons--.png" alt="minimizar" class="iconos"></div>
+                <div class="button maximize" onclick="maximizeWindow()"><img src="Images/icons-m.png" alt="maximizar" class="iconos"></div>
+                <div class="button close" onclick="closeWindow()"><img src="Images/icons-x.png" alt="cerrar" class="iconos"></div>
+            </div>
         </div>
         <div class="alinador">
-            <pre>
-░██████╗░░█████╗░██████╗░░█████╗░
-██╔════╝░██╔══██╗██╔══██╗██╔══██╗
-██║░░██╗░███████║██████╦╝██║░░██║
-██║░░╚██╗██╔══██║██╔══██╗██║░░██║
-╚██████╔╝██║░░██║██████╦╝╚█████╔╝
-░╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░
-            </pre>
+            <div id="Letras">
+                <img src="Images/Letras.png" alt="Letras">
+            </div>
             <p>Hello world in Java</p>
             <code class="code Java">System.out.println("Hello world!");</code>
             <p>Hello world in C</p>

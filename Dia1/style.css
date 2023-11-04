@@ -1,12 +1,13 @@
 body{
     margin: 0; /* Eliminar margen predeterminado */
     padding: 0; /* Eliminar padding predeterminado */
-    background-image: url(Images/Fondo3.png);
+    background-image: url(Images/Fondo4.png);
     background-position: center center; /* Centra la imagen en la página */
     background-repeat: no-repeat; /* Asegura que la imagen no se repita */
     background-attachment: fixed; /* La imagen no se desplaza con el contenido */
     background-size: cover; /* Hace que la imagen cubra todo el viewport */
     height: 100vh; /* Altura completa del viewport */
+    font-family: 'Press Start 2P', cursive;
 }
 
 .content{
@@ -18,14 +19,14 @@ body{
 }
 
 .alinador{
-        background-color: rgba(236, 127, 172, 0.623);
+        background-color: rgba(253, 152, 57, 0.596); 
         border-bottom-left-radius: 10px; /* Esto redondea las esquinas */
         border-bottom-right-radius: 10px; 
         width: 574px;
         padding-bottom: 9px;
         border-width: 5px;
         border-style: solid;
-        border-color: rgba(16, 127, 231, 0.815);
+        border-color: rgb(93 42 13);
 }
 
 pre {
@@ -41,24 +42,27 @@ pre {
 }
 .barra{
     display: flex;
-    background-color: rgba(214,64,127,255);
+    background-color: rgba(188, 76, 2, 0.753);
     width: 578px;
     border-top-left-radius: 10px; /* Esto redondea las esquinas */
     border-top-right-radius: 10px; 
     border-style: solid;
-    border-color: rgba(16, 127, 231, 0.815);
+    border-color: rgb(93 42 13);
     justify-content: space-between;
+    margin-top: 80px;
 }
 .alinador p{
     padding-left: 25px;
-    color: #002442;
+    color: rgba(40,56,148,255);
     margin-bottom: 5px;
     margin-top: 10px;
-    font-family: cursive;
+    font-family: 'Press Start 2P', cursive;
 }
 .alinador code{
     padding-left: 25px;
-    font-size: 22px;
+    font-size: 14px;
+    padding-bottom: 15px;
+    padding-top: 8px;
 }
 code.code.Java{
     width: 35ch;
@@ -73,10 +77,11 @@ code.code.Java{
     overflow: hidden;
  }
  code.code{
-    color: #02fdfd;
+    color: rgba(239,59,37,255);
     display: block;
     white-space: nowrap;
     border-right: 4px solid;
+    font-family: 'Press Start 2P', cursive;
  }
  code.code.Python{
     width: 21ch;
@@ -95,10 +100,40 @@ code.code.Java{
 
 .mario{
     width: 209px;
+    margin-top: 60px;
 }
 
 #url{
     margin-left: 22px;
-    font-family: cursive;
+    font-family: 'Press Start 2P', cursive;
     font-size: 11px;
 }
+
+#Letras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fake-title-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 10px;
+  }
+  
+  .button {
+    padding: 0 10px;
+    cursor: pointer;
+    user-select: none;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+  }
+  
+  .button:hover {
+    background-color: rgba(238, 124, 49, 0.904); /* Naranja */
+    /* mover los el color del brillo */
+    box-shadow: 0 0 8px 0 #FF851C;
+  }
+  .iconos{
+    width: 22px;
+  }
