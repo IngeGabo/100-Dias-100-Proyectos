@@ -6,4 +6,4 @@ Es un hola mundo, hecho solo en html y css, un estilo neon porque es mi favorito
 <img  src="https://skillicons.dev/icons?i=html,css" /> 
 
 ### Como se ve
-<img  src="https://cdn.discordapp.com/attachments/749027520187334667/1170257429049647114/image.png?ex=65586229&is=6545ed29&hm=01a5fb05d1f1ed065cfe47255ef7cc9c5298265f021acaae97022868f3e03955&" /> 
+<img  src="https://cdn.discordapp.com/attachments/749027520187334667/1170592073607561286/image.png?ex=655999d2&is=654724d2&hm=20ed4d003c852ff74ad98dd7e2c075ba5e489fb80221fa311cbcce6dcbe8d608&" /> 
