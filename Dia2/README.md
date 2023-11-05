@@ -6,4 +6,4 @@ Es un tarjeta de presentación, hecho solo en html y css, un estilo neon porque 
 <img  src="https://skillicons.dev/icons?i=html,css" /> 
 
 ### Como se ve
-<img  src="https://cdn.discordapp.com/attachments/749027520187334667/1170257429049647114/image.png?ex=65586229&is=6545ed29&hm=01a5fb05d1f1ed065cfe47255ef7cc9c5298265f021acaae97022868f3e03955&" /> 
+<img  src="https://cdn.discordapp.com/attachments/900189457523806299/1170590075202060358/image.png?ex=655997f6&is=654722f6&hm=51b96d1648b87d4c3689b1e836f04724b910d95aa01a8f4efaf0d64e0e6f304a&" /> 
