@@ -1,5 +1,10 @@
 body{
-  background-color: #000;
+  background-image: url(Imagen/fondo.jpg);
+  background-position: center center; /* Centra la imagen en la página */
+  background-repeat: no-repeat; /* Asegura que la imagen no se repita */
+  background-attachment: fixed; /* La imagen no se desplaza con el contenido */
+  background-size: cover; /* Hace que la imagen cubra todo el viewport */
+  height: 100vh; /* Altura completa del viewport */
 }
 .centrado{
   display: flex;
@@ -77,7 +82,7 @@ body{
 
 }
 
-@keyframes color-change {
+/* @keyframes color-change { 
   0% { background-color: rgb(224, 16, 16) }
   20% { background-color: rgb(226, 116, 14);}
   40% { background-color: rgb(205, 226, 14);}
@@ -88,16 +93,16 @@ body{
 
 body {
   animation-name: color-change;
-  animation-duration: 20s; /* Duración de 3 segundos */
+  animation-duration: 20s;  Duración de 3 segundos 
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  animation-direction: alternate; /* Alterna la animación de ida y vuelta */
+  animation-direction: alternate;  Alterna la animación de ida y vuelta 
   width: 100%;
-  height: 100vh; /* 100% de la altura de la pantalla */
+  height: 100vh;  100% de la altura de la pantalla 
   position: absolute;
   top: 0;
   left: 0;
-}
+}*/
 #fotoMia{
   width: 60px;
   border-radius: 5px;
@@ -136,6 +141,7 @@ p{
   border-radius: 50px;
   width: 46px;
   height: 23px;
+  margin-right: 7px;
 }
 
 .card svg {
