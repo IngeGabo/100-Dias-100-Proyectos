@@ -1,17 +1,38 @@
 package operaciones;
 
-public class ConvertirMonedas {
-    private static final String[] combinaciones = {"MXNMXN", "MXNUSD", "MXNEUR", "USDMXN", "USDUSD", "USDEUR", "EURMXN", "EURUSD", "EUREUR"};
-    private static final float[] miArreglo = {1.0f, 0.058f, 0.053f, 17.36f, 1.0f, 0.93f, 18.74f, 1.08f, 1.0f};
-    //public static float convertir
-    public static float convertirMoneda(String combinacion, float moneda){
+import java.math.BigDecimal;
+import java.util.HashMap;
 
-        for (int i = 0;  i < 9; i++){
-            if (combinacion.equals(combinaciones[i])) {
-                System.out.println(miArreglo[i]);
-                moneda = miArreglo[i]*moneda;
-            }
+public class ConvertirMonedas {
+    private float valorUsuario;
+    private float valorCalculado;
+    private String combinacionDeMonedas;
+    private final HashMap<String,Float> relation = new HashMap<>();
+    public ConvertirMonedas(){
+        relation.put("MXNUSD", new Float(0.057232995));
+        relation.put("MXNEUR", new Float(0.054064068));
+        relation.put("MXNMXN", new Float(1));
+        relation.put("USDMXN", new Float(17.472473));
+        relation.put("USDEUR", new Float(0.94466491));
+        relation.put("USDUSD", new Float(1));
+        relation.put("EURMXN", new Float(18.496573));
+        relation.put("EURUSD", new Float(1.0585764));
+        relation.put("EUREUR", new Float(1));
+    }
+        public float convertirMoneda(){
+        valorCalculado = relation.get(combinacionDeMonedas) * valorUsuario ;
+        return  valorCalculado;
         }
-        return  moneda;
-        }
+
+    public void setValorUsuario(float valorUsuario) {
+        this.valorUsuario = valorUsuario;
+    }
+
+    public void setCombinacionDeMonedas(String combinacionDeMonedas) {
+        this.combinacionDeMonedas = combinacionDeMonedas;
+    }
+
+    public float getValorCalculado() {
+        return valorCalculado;
+    }
 }

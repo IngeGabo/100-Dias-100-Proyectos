@@ -10,21 +10,26 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 
-<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Binary Brains Dia 3" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DivisasController">
-  <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="309.0" prefWidth="526.0" style="-fx-background-color: FFCBAD;">
-         <children>
-            <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="131.0" layoutY="21.0" prefHeight="102.0" prefWidth="337.0" text="Convertidor de Divisas">
-               <font>
-                  <Font size="29.0" />
-               </font>
-            </Label>
-            <ComboBox   fx:id="comboBoxMonedas" layoutX="121.0" layoutY="145.0" prefWidth="150.0" promptText="Divisa" style="-fx-background-color: FFDCE6;" />
-            <ComboBox   fx:id="comboBoxMonedasTwo" layoutX="121.0" layoutY="218.0" prefWidth="150.0" promptText="Divisa" style="-fx-background-color: FFDCE6;" />
-            <TextField  fx:id="entrada" layoutX="319.0" layoutY="145.0" />
-            <TextField  fx:id="salida" layoutX="319.0" layoutY="218.0" />
-            <Button onAction="#limpiarTexto" layoutX="188.0" layoutY="290.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: E2F5B8;" text="Limpiar" />
-            <Button onAction="#convertirTexto" layoutX="319.0" layoutY="291.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: E2F5B8;" text="Convertir" />
-         </children></AnchorPane>
-  </content>
-</TitledPane>
+<VBox id="main" alignment="CENTER" maxHeight="200.0" maxWidth="400.0" minHeight="200.0" minWidth="400.0" spacing="20.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DivisasController">
+   <children>
+   <TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="620.0" text="Binary Brains Dia 3">
+     <content>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="309.0" prefWidth="526.0" style="-: ;">
+            <children>
+               <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="131.0" layoutY="21.0" prefHeight="102.0" prefWidth="337.0" text="Convertidor de Divisas">
+                  <font>
+                     <Font size="29.0" />
+                  </font>
+               </Label>
+               <ComboBox fx:id="comboBoxMonedas" layoutX="121.0" layoutY="145.0" prefWidth="150.0" promptText="Divisa" style="-: ;" />
+               <ComboBox fx:id="comboBoxMonedasTwo" layoutX="121.0" layoutY="218.0" prefWidth="150.0" promptText="Divisa" />
+               <TextField fx:id="entrada" layoutX="319.0" layoutY="145.0" />
+               <TextField fx:id="salida" layoutX="319.0" layoutY="218.0" />
+               <Button layoutX="188.0" layoutY="290.0" mnemonicParsing="false" onAction="#limpiarTexto" prefHeight="32.0" prefWidth="83.0" text="Limpiar" />
+               <Button layoutX="319.0" layoutY="291.0" mnemonicParsing="false" onAction="#convertir" prefHeight="32.0" prefWidth="83.0" text="Convertir" />
+            </children>
+            </AnchorPane>
+     </content>
+   </TitledPane>
+   </children>
+</VBox>
