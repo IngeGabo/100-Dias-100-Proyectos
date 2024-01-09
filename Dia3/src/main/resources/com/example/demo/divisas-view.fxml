@@ -21,12 +21,12 @@
                      <Font size="29.0" />
                   </font>
                </Label>
-               <ComboBox fx:id="comboBoxMonedas" layoutX="121.0" layoutY="145.0" prefWidth="150.0" promptText="Divisa" style="-: ;" />
-               <ComboBox fx:id="comboBoxMonedasTwo" layoutX="121.0" layoutY="218.0" prefWidth="150.0" promptText="Divisa" />
-               <TextField fx:id="entrada" layoutX="319.0" layoutY="145.0" />
-               <TextField fx:id="salida" layoutX="319.0" layoutY="218.0" />
-               <Button layoutX="188.0" layoutY="290.0" mnemonicParsing="false" onAction="#limpiarTexto" prefHeight="32.0" prefWidth="83.0" text="Limpiar" />
-               <Button layoutX="319.0" layoutY="291.0" mnemonicParsing="false" onAction="#convertir" prefHeight="32.0" prefWidth="83.0" text="Convertir" />
+               <ComboBox fx:id="comboBoxMonedas" layoutX="159.0" layoutY="145.0" prefWidth="150.0" promptText="Divisa" style="-: ;" />
+               <ComboBox fx:id="comboBoxMonedasTwo" layoutX="159.0" layoutY="201.0" prefWidth="150.0" promptText="Divisa" />
+               <TextField fx:id="entrada" layoutX="309.0" layoutY="145.0" />
+               <TextField fx:id="salida" layoutX="309.0" layoutY="201.0" />
+               <Button fx:id="limpiar" layoutX="159.0" layoutY="250.0" mnemonicParsing="false" onAction="#limpiarTexto" prefHeight="32.0" prefWidth="141.0" text="Limpiar" />
+               <Button fx:id="convertir" layoutX="317.0" layoutY="250.0" mnemonicParsing="false" onAction="#convertir" prefHeight="32.0" prefWidth="143.0" text="Convertir" />
             </children>
             </AnchorPane>
      </content>

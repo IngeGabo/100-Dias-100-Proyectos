@@ -18,7 +18,7 @@
     -fx-background-color: #1c2130;
     -fx-border-color: #a6b0c3;
     -fx-text-fill: #ffeaad;
-}  
+}
 .combo-box{
     -fx-background-color: #1c2130;
     -fx-border-color: #a6b0c3;
@@ -31,4 +31,15 @@
 
 .combo-box .text-field {
     -fx-text-fill: #ffeaad; /* Color del texto para el campo de texto visible */
+}
+
+.button:hover{
+        -fx-background-color: #ffeaad;
+        -fx-border-radius:    5px;
+        -fx-border-color:     #a6b0c3;
+        -fx-text-fill:        #2e3751;
+        -fx-font-weight:      bold;
+        -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 3, 3, 3, 3);
+        -fx-scale-x: 1.1;
+        -fx-scale-y: 1.1;
 }
